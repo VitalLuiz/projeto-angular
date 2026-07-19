@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Login {
 
-  aparecermensagem(): void{
+  aparecer_mensagem(): void{
     alert("Login realizado com sucesso!");
   }
-
 }
