@@ -4,10 +4,14 @@ import { Login } from "./login/login";
 import { NgClass } from "../../node_modules/@angular/common/types/_common_module-chunk";
 import { Header } from './header/header';
 import { email } from '@angular/forms/signals';
+import { Diretiva } from "./diretiva/diretiva";
+import { Ifrender } from "./ifrender/ifrender";
+import { Eventos } from "./eventos/eventos";
+import { Emitter } from "./emitter/emitter";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Header],
+  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
