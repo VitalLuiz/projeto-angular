@@ -8,10 +8,11 @@ import { Diretiva } from "./diretiva/diretiva";
 import { Ifrender } from "./ifrender/ifrender";
 import { Eventos } from "./eventos/eventos";
 import { Emitter } from "./emitter/emitter";
+import { ListRender } from "./list-render/list-render";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter],
+  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter, ListRender],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

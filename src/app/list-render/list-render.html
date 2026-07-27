@@ -1,0 +1,10 @@
+<div class="class">
+    <h2>Animais</h2>
+    <ul>
+        @for (animal of animals; track $index) {
+            <li>Nome: {{ animal.name }}, Tipo: {{ animal.type }}</li>
+            <button (click)="mostrarIdade(animal)">Mostrar Idade</button>
+        }
+    </ul>
+    <h3>{{ animalInformations }}</h3>
+</div>
