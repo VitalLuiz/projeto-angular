@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Login } from "./login/login";
@@ -9,10 +11,12 @@ import { Ifrender } from "./ifrender/ifrender";
 import { Eventos } from "./eventos/eventos";
 import { Emitter } from "./emitter/emitter";
 import { ListRender } from "./list-render/list-render";
+import { PipeOperator } from "./pipe-operator/pipe-operator";
+import { TwoBinding } from "./two-binding/two-binding";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter, ListRender],
+  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter, ListRender, PipeOperator, TwoBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

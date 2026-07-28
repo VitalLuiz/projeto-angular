@@ -1,0 +1,15 @@
+<div class="class">
+    <h2>Two way data binding</h2>
+    <form action="">
+        <input type="text" [(ngModel)]="name"
+        name = 'name'
+        placeholder="Digite seu nome: "
+        >
+        <input type="submit" placeholder="Enviar">
+    </form>
+    @if (name != '') {
+        <p>Seu nome é {{ name }}</p>
+    }@else {
+        <p>Digite seu nome</p>
+    }
+</div>
