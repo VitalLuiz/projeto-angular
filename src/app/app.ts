@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
 
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
 import { Login } from "./login/login";
 import { NgClass } from "../../node_modules/@angular/common/types/_common_module-chunk";
 import { Header } from './header/header';
@@ -16,7 +16,7 @@ import { TwoBinding } from "./two-binding/two-binding";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter, ListRender, PipeOperator, TwoBinding],
+  imports: [RouterOutlet, Login, Header, Diretiva, Ifrender, Eventos, Emitter, ListRender, PipeOperator, TwoBinding, RouterLinkWithHref],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

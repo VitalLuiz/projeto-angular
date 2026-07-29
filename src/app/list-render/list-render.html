@@ -4,6 +4,7 @@
         @for (animal of animals; track $index) {
             <li>Nome: {{ animal.name }}, Tipo: {{ animal.type }}</li>
             <button (click)="mostrarIdade(animal)">Mostrar Idade</button>
+            <button (click)="removerAnimal(animal)">Excluir</button>
         }
     </ul>
     <h3>{{ animalInformations }}</h3>
